@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "generatedAt": "2025-11-28T01:52:33.761Z",
+    "version": "1.1.0",
+    "generatedAt": "2025-11-28T06:00:04.187Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -3268,7 +3268,7 @@
       }
     ],
     "seo": {
-      "title": "",
+      "title": "부안 오션빌리지104",
       "description": "",
       "keywords": ""
     },
@@ -3545,7 +3545,6 @@
           ]
         }
       }
-    },
-    "id": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
+    }
   }
 }
