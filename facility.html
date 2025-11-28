@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="숙소 설명">
+    <meta name="keywords" content="SEO 키워드">
+    <title id="page-title">시설 안내 - 숙소명</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/common.css" as="style">
+    <link rel="preload" href="styles/facility.css" as="style">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/facility.css">
+
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="부안 오션빌리지104 풀빌라 - 시설안내" />
+  <meta property="og:description" content="아름다운 바다와 함께하는 특별한 여행
+부안 오션빌리지104에 오신 것을 환영합니다." />
+  <meta property="og:image" content="https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/property/77653dd1-c1fb-4686-9674-23340a9284e7/thumbnail/1764219803605-bzwkrk3sjt6.jpg" />
+  <meta property="og:url" content="https://oceanvillage104.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="부안 오션빌리지104 풀빌라 - 시설안내" />
+  <meta name="twitter:description" content="아름다운 바다와 함께하는 특별한 여행
+부안 오션빌리지104에 오신 것을 환영합니다." />
+  <meta name="twitter:image" content="https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/property/77653dd1-c1fb-4686-9674-23340a9284e7/thumbnail/1764219803605-bzwkrk3sjt6.jpg" />
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider-section">
+        <div class="hero-slider" id="hero-slider">
+            <!-- Slides will be dynamically generated -->
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-center">
+                <h1 class="hero-title" data-facility-hero-page-title></h1>
+            </div>
+        </div>
+        <!-- Slider Progress -->
+        <div class="hero-slider-progress">
+            <div class="hero-slider-nav">
+                <button class="hero-slider-arrow prev" id="hero-prev"></button>
+                <span class="hero-slider-current" id="hero-current">01</span>
+                <div class="hero-slider-line">
+                    <div class="hero-slider-line-fill" id="hero-progress-fill"></div>
+                </div>
+                <span class="hero-slider-total" id="hero-total">05</span>
+                <button class="hero-slider-arrow next" id="hero-next"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="main-content-section main-content-fade-in">
+        <div class="facility-content-container">
+        <!-- Facility Introduction Section -->
+        <div class="facility-intro-section">
+            <div class="facility-intro-content">
+                <div class="facility-label">
+                    <span id="facility-number" class="facility-number">SPECIAL 01</span>
+                </div>
+                <h1 id="facility-title" class="facility-title" data-facility-name></h1>
+                <div class="facility-description">
+                    <pre data-facility-description></pre>
+                </div>
+                <div class="facility-text-content usage-guide">
+                    <div class="facility-text-header">
+                        <h3 class="facility-section-title">이용 안내</h3>
+                    </div>
+                    <div class="facility-text-body" data-facility-features-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 주요 특징 섹션 custom field -->
+        <div class="facility-content-section">
+            <div class="facility-image-content">
+                <img src="" alt="Facility View" class="facility-content-img" data-facility-features-image>
+            </div>
+            <!-- 임시 주석 처리 -->
+            <div class="facility-text-content">
+                <!-- <div class="facility-text-header">
+                    <h3 class="facility-section-title">주요 특징</h3>
+                </div>
+                <div class="facility-text-body" data-facility-features-container>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- 추가 정보 섹션 custom field -->
+        <div class="facility-content-section facility-content-reversed">
+            <div class="facility-image-content">
+                <img src="" alt="Facility View" class="facility-content-img" data-facility-additionalinfos-image>
+            </div>
+            <!-- 임시 주석 처리 -->
+            <div class="facility-text-content">
+                <!-- <div class="facility-text-header">
+                    <h3 class="facility-section-title">추가 정보</h3>
+                </div>
+                <div class="facility-text-body" data-facility-additionalinfos-container>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- 이용 혜택 섹션 custom field -->
+        <div class="facility-content-section">
+            <div class="facility-image-content">
+                <img src="" alt="Facility View" class="facility-content-img" data-facility-benefits-image>
+            </div>
+            <!-- 임시 주석 처리 -->
+            <div class="facility-text-content">
+                <!-- <div class="facility-text-header">
+                    <h3 class="facility-section-title">이용 혜택</h3>
+                </div>
+                <div class="facility-text-body" data-facility-benefits-container>
+                </div> -->
+            </div>
+        </div>
+        </div> <!-- facility-content-container -->
+    </section>
+
+
+
+    <!-- Include ImageWithFallback script -->
+    <script src="js/image-with-fallback.js"></script>
+
+    <!-- Common Slider Module -->
+    <script src="js/common/slider.js"></script>
+
+    <!-- Image Helpers -->
+    <script src="js/image-helpers.js"></script>
+
+    <!-- Base Data Mapper -->
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+
+    <!-- Facility Page Mapper -->
+    <script src="js/data-mapper/pages/facility-mapper.js"></script>
+
+    <!-- Preview Handler for Admin Integration -->
+    <script src="js/preview-handler.js"></script>
+
+    <!-- Header Footer Mapper -->
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+
+    <!-- Header and Footer Loader -->
+    <script src="js/header-footer-loader.js"></script>
+
+    <!-- Page-specific script -->
+    <script src="js/pages/facility.js"></script>
+
+</body>
+</html>

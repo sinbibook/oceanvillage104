@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="숙소 설명">
+    <meta name="keywords" content="SEO 키워드">
+    <title>오시는길 - 숙소명</title>
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/directions.css">
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="부안 오션빌리지104 풀빌라 - 오시는길" />
+  <meta property="og:description" content="아름다운 바다와 함께하는 특별한 여행
+부안 오션빌리지104에 오신 것을 환영합니다." />
+  <meta property="og:image" content="https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/property/77653dd1-c1fb-4686-9674-23340a9284e7/thumbnail/1764219803605-bzwkrk3sjt6.jpg" />
+  <meta property="og:url" content="https://oceanvillage104.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="부안 오션빌리지104 풀빌라 - 오시는길" />
+  <meta name="twitter:description" content="아름다운 바다와 함께하는 특별한 여행
+부안 오션빌리지104에 오신 것을 환영합니다." />
+  <meta name="twitter:image" content="https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/property/77653dd1-c1fb-4686-9674-23340a9284e7/thumbnail/1764219803605-bzwkrk3sjt6.jpg" />
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- 메인 소개 섹션 히어로 0번째 이미지-->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="" alt="오시는길 배경" data-customfield-directions-hero-image-0>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-center">
+                <h1 class="hero-title" data-directions-hero-title>LOCATION</h1>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="hero-scroll-down" onclick="scrollToNextSection()">
+            <svg class="scroll-arrow" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Location Info Section -->
+    <section class="location-info-section">
+        <div class="directions-content-container">
+        <!-- Facility Introduction Section -->
+        <div class="facility-intro-section">
+            <div class="facility-intro-content">
+                <div class="facility-label">
+                    <span class="facility-number" data-directions-title>LOCATION</span>
+                </div>
+                <p class="facility-description" data-directions-description>
+                    오시는 길 안내입니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- Banner Image Section 히어로 1번째 이미지 -->
+        <div class="directions-banner-section">
+            <div class="container">
+                <img src="" alt="오시는길 배너" class="directions-banner-image" data-customfield-directions-hero-image-1>
+            </div>
+        </div>
+
+        <!-- 지도 섹션 -->
+        <section class="map-section main-content-fade-in">
+            <div class="container">
+                <div class="address-section">
+                    <p>
+                        <svg class="location-icon" viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span data-directions-address></span>
+                    </p>
+                    <!-- 안내사항  -->
+                     <div class="notice-wrap">
+                        <h4 data-customfield-directions-notice-title>안내사항</h4>
+                        <p data-customfield-directions-notice-description>안내사항 1</p>
+                     </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="map-container">
+                    <div id="kakao-map"></div>
+                </div>
+            </div>
+        </section>
+        </div> <!-- directions-content-container -->
+
+    <!-- Kakao Map SDK -->
+    <script type="text/javascript" src="js/kakao-maps-sdk.js"></script>
+
+    <!-- Include ImageWithFallback script -->
+    <script src="js/image-with-fallback.js"></script>
+
+    <!-- Common JavaScript -->
+    <script src="js/common.js"></script>
+
+    <!-- Image Helpers -->
+    <script src="js/image-helpers.js"></script>
+
+    <!-- Base Data Mapper -->
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+
+    <!-- Directions Page Mapper -->
+    <script src="js/data-mapper/pages/directions-mapper.js"></script>
+
+    <!-- Preview Handler for Admin Integration -->
+    <script src="js/preview-handler.js"></script>
+
+    <!-- Header Footer Mapper -->
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+
+    <!-- Header and Footer Loader -->
+    <script src="js/header-footer-loader.js"></script>
+
+    <!-- Page-specific script -->
+    <script src="js/pages/directions.js"></script>
+
+</body>
+</html>
