@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.1.0",
-    "generatedAt": "2025-11-28T06:00:04.187Z",
+    "version": "1.2.0",
+    "generatedAt": "2025-11-28T06:04:18.266Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -3463,8 +3463,8 @@
                 ]
               },
               "notice": {
-                "title": "",
-                "description": ""
+                "title": "오시는 길 안내",
+                "description": "네비게이션에 펜션 주소 또는 오션빌리지104를 입력해주세요."
               }
             }
           ]
@@ -3490,7 +3490,7 @@
                     "isSelected": true
                   }
                 ],
-                "description": ""
+                "description": " 오션빌리지104 풀빌라는 부안에 위치한 아름다운 해변과 함께하는 숙소입니다.\n모든 객실에서 탁 트인  오션뷰를 감상할 수 있으며, 소중한 사람들과 함께하며 쉴 수 있는 편안하고 아늑한 공간을 제공합니다.\n"
               },
               "about": [
                 {
