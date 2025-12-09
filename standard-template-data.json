@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.8.0",
-    "generatedAt": "2025-12-08T08:58:55.357Z",
+    "version": "1.9.0",
+    "generatedAt": "2025-12-09T09:01:24.858Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -3385,22 +3385,22 @@
       {
         "logo": [
           {
-            "id": "229a6fca-a1aa-4f51-b49b-02bb21445508",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/logo/1764222788262-272yj4m2092.png",
+            "id": "3e3008c7-59c6-4129-a805-fc88a9152d09",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/logo/1765270847316-cg53kcnuvvf.png",
             "sortOrder": 0,
             "description": "",
             "isSelected": true
           },
           {
-            "id": "49b294c3-9d86-4eb4-93d6-9093596a498e",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/logo/1764221293568-y2droymem9h.png",
+            "id": "229a6fca-a1aa-4f51-b49b-02bb21445508",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/logo/1764222788262-272yj4m2092.png",
             "sortOrder": 1,
             "description": "",
             "isSelected": false
           },
           {
-            "id": "91e1ff80-44dd-44c8-9a3a-ff8212d18bc3",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/logo/1764222788266-d61tzzjgxtf.png",
+            "id": "49b294c3-9d86-4eb4-93d6-9093596a498e",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/logo/1764221293568-y2droymem9h.png",
             "sortOrder": 2,
             "description": "",
             "isSelected": false
