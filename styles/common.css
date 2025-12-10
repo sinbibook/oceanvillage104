@@ -12,7 +12,15 @@
     font-display: swap;
 }
 
-/* Heading Font */
+/* Heading Font - NotoSerif Korean */
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('../fonts/NotoSerifKR-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+/* KCC Font for Initial Brand Reveal */
 @font-face {
     font-family: 'KccImKwonTaek';
     src: url('../fonts/KCC-Imkwontaek.ttf') format('truetype');

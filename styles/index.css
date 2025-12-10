@@ -74,7 +74,6 @@
     overflow: hidden;
     background: #f8f8f8;
 }
-
 /* Background Slider with Fade */
 .hero-background {
     position: absolute;
@@ -184,10 +183,10 @@
 }
 
 .brand-title {
-    font-family: 'KccImKwonTaek', 'Chonburi', sans-serif;
+    font-family: 'NotoSerifKR', sans-serif;
     font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: normal;
-    letter-spacing: 0.2em;
+    font-weight: 600;
+    letter-spacing: 4px;
     color: #fff;
     margin: 0;
     text-transform: uppercase;
@@ -878,9 +877,6 @@
         display: none;
     }
 
-    .quote-mark {
-        display: none;
-    }
 
     .signature-slide-title {
         font-size: 1.1rem !important;
@@ -1360,27 +1356,6 @@
     text-transform: uppercase;
 }
 
-/* Quote Mark Design */
-.quote-mark {
-    position: absolute;
-    font-family: 'KccImKwonTaek', 'Chonburi', sans-serif;
-    font-size: 80px;
-    line-height: 1;
-    color: rgba(200, 200, 200, 0.3);
-    font-weight: normal;
-    z-index: 0;
-}
-
-.quote-top {
-    top: -10px;
-    left: -20px;
-}
-
-.quote-bottom {
-    bottom: -10px;
-    right: 40px;
-    transform: rotate(180deg);
-}
 
 /* Slider Controls */
 .signature-slider-nav {
@@ -1523,7 +1498,7 @@
 }
 
 .index-closing-title {
-    font-family: 'KccImKwonTaek', 'Chonburi', sans-serif;
+    font-family: 'NotoSerifKR', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 0.1em;
