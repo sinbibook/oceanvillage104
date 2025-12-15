@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.10.0",
-    "generatedAt": "2025-12-10T07:34:34.101Z",
+    "version": "1.11.0",
+    "generatedAt": "2025-12-15T06:38:06.073Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -12,8 +12,8 @@
     "description": "아름다운 바다와 함께하는 특별한 여행\n부안 오션빌리지104에 오신 것을 환영합니다.",
     "subtitle": "아름다운 오션뷰를 보며 힐링할 수 있는 부안 오션빌리지 104입니다.",
     "address": "전북특별자치도 부안군 변산면 변산해변로 241",
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 35.6417645033892,
+    "longitude": 126.471437022404,
     "contactPhone": "010-2570-1040",
     "contactEmail": "april09@naver.com",
     "checkin": "15:00:00",
