@@ -112,10 +112,34 @@ class ReservationMapper extends BaseDataMapper {
         const property = this.data.property;
         const usageContent = this.safeSelect('[data-reservation-usage-content]');
 
-        if (!usageContent || !property.reservationGuide) return;
+        if (!usageContent || !property.usageGuide) return;
 
         // 기존 내용 비우고 새로 생성
         usageContent.innerHTML = '';
+
+        // property.usageGuide를 \n으로 분할해서 처리
+        const rules = property.usageGuide.split('\n').filter(rule => rule.trim());
+        rules.forEach(rule => {
+            const p = document.createElement('p');
+            p.className = 'accordion-text';
+            p.textContent = rule;
+            usageContent.appendChild(p);
+        });
+    }
+
+    /**
+     * 예약안내 섹션 매핑 (reservation-guide-content)
+     */
+    mapReservationGuideSection() {
+        if (!this.isDataLoaded || !this.data.property) return;
+
+        const property = this.data.property;
+        const reservationGuideContent = this.safeSelect('[data-reservation-guide-content]');
+
+        if (!reservationGuideContent || !property.reservationGuide) return;
+
+        // 기존 내용 비우고 새로 생성
+        reservationGuideContent.innerHTML = '';
 
         // property.reservationGuide를 \n으로 분할해서 처리
         const rules = property.reservationGuide.split('\n').filter(rule => rule.trim());
@@ -123,7 +147,7 @@ class ReservationMapper extends BaseDataMapper {
             const p = document.createElement('p');
             p.className = 'accordion-text';
             p.textContent = rule;
-            usageContent.appendChild(p);
+            reservationGuideContent.appendChild(p);
         });
     }
 
@@ -238,6 +262,7 @@ class ReservationMapper extends BaseDataMapper {
         this.mapHeroSection();
         this.mapReservationInfoSection();
         this.mapUsageGuideSection();
+        this.mapReservationGuideSection();
         this.mapCheckinCheckoutSection();
         this.mapRefundSection();
         this.mapCancellationFeeSection();
@@ -265,6 +290,7 @@ class ReservationMapper extends BaseDataMapper {
         this.mapHeroSection();
         this.mapReservationInfoSection();
         this.mapUsageGuideSection();
+        this.mapReservationGuideSection();
         this.mapCheckinCheckoutSection();
         this.mapRefundSection();
         this.mapCancellationFeeSection();
