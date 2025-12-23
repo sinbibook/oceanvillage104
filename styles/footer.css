@@ -3,8 +3,8 @@
    =================================== */
 
 .footer {
-    background: #1a1a1a;
-    color: #fff;
+    background: var(--color-secondary);
+    color: var(--color-primary);
     padding: 60px 0 0;
     margin-top: auto;
 }
@@ -34,10 +34,10 @@
 }
 
 .footer-title {
-    font-family: 'NotoSerifKR', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 1.1rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--color-primary);
     margin-bottom: 10px;
     letter-spacing: 1px;
 }

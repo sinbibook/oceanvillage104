@@ -2,47 +2,6 @@
    Common Styles - Used Across All Pages
    =================================== */
 
-/* Font Face Declarations */
-
-/* English Font - Chonburi */
-@font-face {
-    font-family: 'Chonburi';
-    src: url('../fonts/Chonburi-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-}
-
-/* Heading Font - NotoSerif Korean */
-@font-face {
-    font-family: 'NotoSerifKR';
-    src: url('../fonts/NotoSerifKR-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-display: swap;
-}
-
-/* KCC Font for Initial Brand Reveal */
-@font-face {
-    font-family: 'KccImKwonTaek';
-    src: url('../fonts/KCC-Imkwontaek.ttf') format('truetype');
-    font-weight: normal;
-    font-display: swap;
-}
-
-/* Body Font */
-@font-face {
-    font-family: 'Pretendard';
-    src: url('../fonts/Pretendard-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MaruBuri';
-    src: url('../fonts/MaruBuri-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-}
-
 /* Reset & Base */
 * {
     margin: 0;
@@ -56,11 +15,11 @@ html {
 }
 
 body {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     font-weight: 400;
-    color: #333;
+    color: var(--color-secondary);
     overflow-x: hidden;
-    background: #f8f8f8;
+    background: var(--color-primary);
     position: relative;
     z-index: 100;
 }
@@ -84,7 +43,7 @@ body::before {
 /* Common Hero Styles */
 .hero-title,
 .hero-subtitle {
-    font-family: 'Chonburi', sans-serif;
+    font-family: var(--font-en-main);
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -116,7 +75,7 @@ body::before {
 }
 
 .hero-scroll-down .scroll-text {
-    font-family: 'Chonburi', sans-serif;
+    font-family: var(--font-en-main);
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -145,7 +104,7 @@ body::before {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Pretendard', 'Chonburi', sans-serif;
+    font-family: var(--font-ko-main);
     font-weight: 700;
     line-height: 1.2;
 }
@@ -193,20 +152,21 @@ img {
 .section-divider {
     width: 60px;
     height: 1px;
-    background: #333;
+    background: var(--color-secondary);
     margin: 0 auto 30px;
 }
 
 .section-title {
-    font-family: 'Pretendard', 'Chonburi', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 0.05em;
-    color: #333;
+    color: var(--color-secondary);
     margin: 0 0 20px 0;
 }
 
 .section-description {
+    font-family: var(--font-ko-sub);
     font-size: 1.1rem;
     color: #666;
     line-height: 1.8;
@@ -218,8 +178,8 @@ img {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background: #333;
-    color: #fff;
+    background: var(--color-secondary);
+    color: var(--color-primary);
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -236,13 +196,13 @@ img {
 
 .btn-outline {
     background: transparent;
-    border: 2px solid #333;
-    color: #333;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 .btn-outline:hover {
-    background: #333;
-    color: #fff;
+    background: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .btn-outline-white {
@@ -261,7 +221,7 @@ img {
 
 .btn-outline-white:hover {
     background: white;
-    color: #333;
+    color: var(--color-secondary);
     transform: translateY(-2px);
 }
 
@@ -331,7 +291,7 @@ img {
     width: 30px;
     height: 30px;
     border: 3px solid #ddd;
-    border-top-color: #333;
+    border-top-color: var(--color-secondary);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
 }
@@ -427,7 +387,7 @@ img {
 
 .hero-slider-current,
 .hero-slider-total {
-    font-family: 'Pretendard', sans-serif;
+    font-family: var(--font-ko-sub);
     opacity: 0.9;
 }
 
@@ -501,10 +461,10 @@ img {
    =================================== */
 
 .facility-number {
-    font-family: 'Chonburi', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 1.1rem;
     font-weight: 400;
-    color: rgba(93, 109, 126, 0.7);
+    color: color-mix(in srgb, var(--color-secondary) 70%, transparent);
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
@@ -541,7 +501,7 @@ body {
 }
 
 .gallery-property-english-name {
-    font-family: 'Chonburi', sans-serif;
+    font-family: var(--font-en-main);
     font-size: 4rem;
     font-weight: 400;
     color: rgba(160, 160, 160, 0.3);
