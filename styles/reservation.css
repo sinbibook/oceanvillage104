@@ -30,7 +30,7 @@
 /* Reservation Info Section */
 .reservation-info-section {
     padding: 100px 0;
-    background: #f8f8f8;
+    background: var(--color-primary);
 }
 
 /* Reservation Content Container */
@@ -57,17 +57,17 @@
 
 
 .facility-title {
-    font-family: 'Chonburi', sans-serif;
+    font-family: var(--font-en-main);
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 400;
-    color: #333;
+    color: var(--color-secondary);
     margin: 0 0 30px 0;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
 .facility-description {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     font-size: 1.1rem;
     line-height: 1.8;
     color: #666;
@@ -114,7 +114,7 @@
 }
 
 .accordion-item {
-    border-bottom: 2px solid rgba(93, 109, 126, 0.2);
+    border-bottom: 2px solid color-mix(in srgb, var(--color-secondary) 20%, transparent);
     margin-bottom: 0;
 }
 
@@ -128,10 +128,10 @@
 }
 
 .accordion-title {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: var(--color-secondary);
     margin: 0;
     text-transform: none;
     padding-left: 20px;
@@ -152,7 +152,7 @@
 .close-icon {
     width: 20px;
     height: 20px;
-    stroke: rgba(93, 109, 126, 0.7);
+    stroke: color-mix(in srgb, var(--color-secondary) 70%, transparent);
     stroke-width: 2;
     fill: none;
 }
@@ -166,7 +166,7 @@
     white-space: pre-line;
     border-radius: 10px;
     margin-bottom: 10px;
-    background: #f1f0f0;
+    background: color-mix(in srgb, var(--color-secondary) 10%, transparent);
 }
 
 .accordion-content.active {
@@ -188,11 +188,11 @@
     flex-shrink: 0;
     width: 20px;
     height: 20px;
-    color: rgba(93, 109, 126, 0.7);
+    color: color-mix(in srgb, var(--color-secondary) 70%, transparent);
 }
 
 .accordion-text {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     font-size: 0.95rem;
     color: #666;
     margin: 0 0 12px 0;
@@ -222,7 +222,7 @@
 .refund-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     background: transparent;
     border: none;
 }
@@ -237,7 +237,7 @@
 .refund-table th {
     background: transparent;
     font-weight: 600;
-    color: #333;
+    color: var(--color-secondary);
     font-size: 0.9rem;
 }
 
@@ -260,7 +260,7 @@
 .divider {
     border: none;
     height: 1px;
-    background: rgba(93, 109, 126, 0.2);
+    background: color-mix(in srgb, var(--color-secondary) 20%, transparent);
     margin: 0 0 40px 0;
     width: 100%;
 }
@@ -269,7 +269,7 @@
     background: transparent;
     border: none;
     padding: 0;
-    font-family: 'Chonburi', sans-serif;
+    font-family: var(--font-en-main);
     font-size: 1.5rem;
     font-weight: 400;
     color: rgba(106, 175, 170, 0.8);
@@ -345,17 +345,17 @@
 }
 
 .info-title {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 2rem;
     font-weight: 600;
-    color: rgba(93, 109, 126, 0.8);
+    color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
     margin: 0 0 30px 0;
-    border-bottom: 2px solid rgba(93, 109, 126, 0.2);
+    border-bottom: 2px solid color-mix(in srgb, var(--color-secondary) 20%, transparent);
     padding-bottom: 20px;
 }
 
 .info-description {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -377,17 +377,17 @@
 }
 
 .section-title {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 2rem;
     font-weight: 600;
-    color: rgba(93, 109, 126, 0.8);
+    color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
     margin: 0 0 20px 0;
 }
 
 .section-divider {
     width: 80px;
     height: 2px;
-    background: rgba(93, 109, 126, 0.3);
+    background: color-mix(in srgb, var(--color-secondary) 30%, transparent);
     border: none;
     margin: 0 auto;
 }
@@ -407,7 +407,7 @@
 .usage-rules,
 .checkin-checkout-rules,
 .refund-rules {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -426,10 +426,10 @@
 } */
 
 .table-title {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-main);
     font-size: 1.3rem;
     font-weight: 600;
-    color: rgba(93, 109, 126, 0.8);
+    color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
     margin: 0 0 20px 0;
     text-align: center;
 }
@@ -453,14 +453,14 @@
 }
 
 .refund-table th {
-    background: rgba(93, 109, 126, 0.1);
-    font-family: 'MaruBuri', sans-serif;
+    background: color-mix(in srgb, var(--color-secondary) 10%, transparent);
+    font-family: var(--font-ko-sub);
     font-weight: 600;
-    color: rgba(93, 109, 126, 0.8);
+    color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
 }
 
 .refund-table td {
-    font-family: 'MaruBuri', sans-serif;
+    font-family: var(--font-ko-sub);
     color: #666;
 }
 

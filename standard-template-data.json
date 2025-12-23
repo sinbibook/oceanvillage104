@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.20.0",
-    "generatedAt": "2025-12-19T03:37:41.633Z",
+    "version": "1.21.0",
+    "generatedAt": "2025-12-23T05:40:57.734Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -380,7 +380,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -571,7 +571,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -762,7 +762,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -953,7 +953,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -1151,7 +1151,7 @@
       "group": "A동(오션뷰,미온수풀빌라)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -1363,7 +1363,7 @@
       "group": "A동(오션뷰,미온수풀빌라)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -1568,7 +1568,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -1773,7 +1773,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -1964,7 +1964,7 @@
       "group": "A동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 6,
+      "maxOccupancy": 5,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -2155,7 +2155,7 @@
       "group": "B동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 8,
+      "maxOccupancy": 6,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -2346,7 +2346,7 @@
       "group": "B동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 8,
+      "maxOccupancy": 6,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -2558,7 +2558,7 @@
       "group": "B동(오션뷰,미온수풀빌라)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 8,
+      "maxOccupancy": 6,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -2777,7 +2777,7 @@
       "group": "B동(오션뷰,미온수풀빌라)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 8,
+      "maxOccupancy": 6,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -2996,7 +2996,7 @@
       "group": "B동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 8,
+      "maxOccupancy": 6,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
@@ -3201,7 +3201,7 @@
       "group": "B동(오션뷰)",
       "size": 125,
       "baseOccupancy": 3,
-      "maxOccupancy": 8,
+      "maxOccupancy": 6,
       "totalRoomCount": {
         "bedroom": 1,
         "bathroom": 2,
