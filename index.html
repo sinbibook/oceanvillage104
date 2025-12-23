@@ -32,6 +32,23 @@
   <meta name="twitter:image" content="https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/property/77653dd1-c1fb-4686-9674-23340a9284e7/thumbnail/1764219803605-bzwkrk3sjt6.jpg" />
 </head>
 <body>
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="popup-overlay">
+      <div class="popup-container" role="dialog" aria-modal="true" aria-label="안내 팝업">
+        <button class="popup-close" aria-label="팝업 닫기"><span aria-hidden="true">&times;</span></button>
+        <div class="popup-content">
+          <img src="images/popup-image.jpg" alt="Popup Image" class="popup-image">
+        </div>
+        <div class="popup-footer">
+          <label class="popup-checkbox-label">
+            <input type="checkbox" id="popup-today-hide">
+            <span>오늘 하루 보지 않기</span>
+          </label>
+          <button class="popup-confirm-btn">닫기</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Include Header -->
     <div id="header-placeholder"></div>
 
@@ -186,6 +203,9 @@
 
     <!-- Page-specific script -->
     <script src="js/pages/index.js"></script>
+
+    <!-- Popup Modal -->
+    <script src="js/popup.js"></script>
 
 </body>
 </html>
