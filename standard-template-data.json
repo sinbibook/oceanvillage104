@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.23.0",
-    "generatedAt": "2025-12-29T02:30:27.395Z",
+    "version": "1.24.0",
+    "generatedAt": "2025-12-30T01:41:19.400Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -4436,49 +4436,49 @@
                     "id": "d2815542-efa7-4f24-9b98-ff19010acd21",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764219980457-udb1df2wq2g.jpg",
                     "sortOrder": 0,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "313b03e4-5263-4a8f-ae0c-31ca6e217d97",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764220165730-yayul4lru4l.jpg",
                     "sortOrder": 1,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "7c8144f3-ffe5-4b7e-a9e3-e426e06f500c",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764221293569-ndivk056y6.jpg",
                     "sortOrder": 2,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "244b1219-289d-4370-a9d5-34b74e7e5d32",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764220082483-tsfvkkjqx7.jpg",
                     "sortOrder": 3,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "ccf0684e-72a1-42be-9adf-e259f7a2c5b5",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764220082483-fjzo9rsq9jw.jpg",
                     "sortOrder": 4,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "839d9038-38e9-484c-b270-618077f44cfc",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764294096126-4kp0mfet0oc.jpg",
                     "sortOrder": 5,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "eaf76bd8-7b9c-47e4-b460-0d12a42f654d",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764294096127-j2tlji530r9.jpg",
                     "sortOrder": 6,
-                    "description": "Ocean Village",
+                    "description": " ",
                     "isSelected": true
                   }
                 ]
@@ -4609,6 +4609,24 @@
             }
           ]
         }
+      },
+      "theme": {
+        "font": {
+          "koSub": {
+            "cdn": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css",
+            "key": "pretendard",
+            "woff2": null,
+            "family": "Pretendard"
+          },
+          "enMain": null,
+          "koMain": {
+            "cdn": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css",
+            "key": "pretendard",
+            "woff2": null,
+            "family": "Pretendard"
+          }
+        },
+        "color": null
       }
     }
   }
