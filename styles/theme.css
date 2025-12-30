@@ -5,4 +5,8 @@
 :root {
   --font-ko-main: 'Pretendard', sans-serif;
   --font-ko-sub: 'Pretendard', sans-serif;
+
+  /* Color variables */
+  --color-primary: #f8f8f8;    /* Light gray for primary background */
+  --color-secondary: #1a1a1a;  /* Dark gray/black for text and footer */
 }
