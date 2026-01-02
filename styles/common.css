@@ -517,3 +517,46 @@ body {
     border-radius: 0.75rem !important;
     background: #d1d5db !important;
 }
+
+/* Mobile Floating Book Now Button */
+.mobile-floating-book-btn {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--color-secondary);
+    opacity: 0.5;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.mobile-floating-book-btn:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-floating-book-btn:active {
+    transform: scale(0.95);
+}
+
+.mobile-floating-book-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Show only on mobile */
+@media screen and (max-width: 768px) {
+    .mobile-floating-book-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -127,6 +127,15 @@ class HeaderFooterMapper extends BaseDataMapper {
                 window.open(`${RESERVATION_URL}${realtimeBookingId}`, '_blank');
             });
         });
+
+        // 모바일 플로팅 예약 버튼에도 같은 링크 설정
+        const floatingBookBtn = document.querySelector('.mobile-floating-book-btn');
+        if (floatingBookBtn) {
+            floatingBookBtn.setAttribute('data-realtime-booking-id', realtimeBookingId);
+            floatingBookBtn.addEventListener('click', () => {
+                window.open(`${RESERVATION_URL}${realtimeBookingId}`, '_blank');
+            });
+        }
     }
 
     /**

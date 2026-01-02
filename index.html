@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/popup.css">
 
   <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:type" content="website" />
@@ -44,6 +45,16 @@
         <button class="section-dot" data-section="4" aria-label="Signature"></button>
         <button class="section-dot" data-section="5" aria-label="Closing"></button>
     </nav>
+
+    <!-- Mobile Floating Book Now Button -->
+    <button class="mobile-floating-book-btn" aria-label="Book Now">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
 
     <!-- 메인 소개 섹션 custom-field -->
     <section class="hero-section">
@@ -163,22 +174,8 @@
         </div>
     </section>
 
-    <!-- Popup Modal -->
-    <div id="popup-modal" class="popup-overlay">
-      <div class="popup-container" role="dialog" aria-modal="true" aria-label="안내 팝업">
-        <button class="popup-close" aria-label="팝업 닫기"><span aria-hidden="true">&times;</span></button>
-        <div class="popup-content">
-          <img src="images/popup-image.jpg" alt="Popup Image" class="popup-image">
-        </div>
-        <div class="popup-footer">
-          <label class="popup-checkbox-label">
-            <input type="checkbox" id="popup-today-hide">
-            <span>오늘 하루 보지 않기</span>
-          </label>
-          <button class="popup-confirm-btn">닫기</button>
-        </div>
-      </div>
-    </div>
+    <!-- Popup System -->
+    <div id="popup-container"></div>
 
     <!-- Include ImageWithFallback script -->
     <script src="js/image-with-fallback.js"></script>
@@ -203,8 +200,6 @@
 
     <!-- Page-specific script -->
     <script src="js/pages/index.js"></script>
-
-    <!-- Popup Script -->
     <script src="js/popup.js"></script>
 
 </body>
