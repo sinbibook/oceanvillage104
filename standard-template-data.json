@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.37.0",
-    "generatedAt": "2026-01-19T08:58:08.841Z",
+    "version": "1.38.0",
+    "generatedAt": "2026-01-19T08:59:21.830Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -4681,7 +4681,7 @@
                 "blockId": "f21d815f-435f-4e79-805f-81b3f5a3b236"
               }
             ],
-            "slider": false,
+            "slider": true,
             "enabled": true,
             "endDate": null,
             "sortOrder": 1,
