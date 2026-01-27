@@ -465,33 +465,52 @@
 
         if (tabs.length === 0 || images.length === 0) return;
 
-        tabs.forEach(tab => {
-            // Hover event
-            tab.addEventListener('mouseenter', () => {
-                const roomType = tab.dataset.room;
+        function activateTab(tab) {
+            const roomType = tab.dataset.room;
 
-                // Update active tab
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
+            // Update active tab
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
 
-                // Update active image
-                images.forEach(img => {
-                    if (img.dataset.room === roomType) {
-                        img.classList.add('active');
-                    } else {
-                        img.classList.remove('active');
-                    }
-                });
-
-                // Update active description item
-                descItems.forEach(item => {
-                    if (item.dataset.room === roomType) {
-                        item.classList.add('active');
-                    } else {
-                        item.classList.remove('active');
-                    }
-                });
+            // Update active image
+            images.forEach(img => {
+                if (img.dataset.room === roomType) {
+                    img.classList.add('active');
+                } else {
+                    img.classList.remove('active');
+                }
             });
+
+            // Update active description item
+            descItems.forEach(item => {
+                if (item.dataset.room === roomType) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        tabs.forEach(tab => {
+            // Desktop: hover event
+            tab.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 768) {
+                    activateTab(tab);
+                }
+            });
+
+            // Mobile: click/touch event
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                activateTab(tab);
+            });
+
+            // Touch event for iOS
+            tab.addEventListener('touchstart', (e) => {
+                // Prevent default touch behavior
+                e.preventDefault();
+                activateTab(tab);
+            }, { passive: false });
         });
 
         // Set default active state on load

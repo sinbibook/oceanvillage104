@@ -85,15 +85,10 @@ class RoomListMapper extends BaseDataMapper {
         const heroImageElement = this.safeSelect('[data-customfield-room-list-hero-image-0]');
         if (!heroImageElement) return;
 
-        // 그룹별 필터링된 객실 중 첫 번째 객실의 exterior 이미지 사용
+        // 그룹별 필터링된 객실 중 첫 번째 객실의 exterior 이미지 사용 (customFields 우선)
         if (this.filteredRooms && this.filteredRooms.length > 0) {
             const firstRoom = this.filteredRooms[0];
-            const exteriorImages = firstRoom.images?.[0]?.exterior || [];
-
-            // isSelected: true인 이미지만 필터링 + sortOrder 정렬
-            const selectedImages = exteriorImages
-                .filter(img => img.isSelected)
-                .sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
+            const selectedImages = this.getRoomImages(firstRoom, 'roomtype_exterior');
 
             const firstExterior = selectedImages[0];
 
@@ -106,6 +101,10 @@ class RoomListMapper extends BaseDataMapper {
                 heroImageElement.src = ImageHelpers.EMPTY_IMAGE_SVG;
                 heroImageElement.classList.add('empty-image-placeholder');
             }
+        } else {
+            // filteredRooms가 없을 때도 placeholder 적용
+            heroImageElement.src = ImageHelpers.EMPTY_IMAGE_SVG;
+            heroImageElement.classList.add('empty-image-placeholder');
         }
     }
 
@@ -163,14 +162,21 @@ class RoomListMapper extends BaseDataMapper {
         const roomCard = document.createElement('div');
         roomCard.className = 'room-card';
 
-        // 객실 이미지 가져오기 (images[0].thumbnail 배열에서)
-        const thumbnails = room.images?.[0]?.thumbnail || [];
-        const sortedImages = thumbnails
-            .filter(img => img.isSelected)
-            .sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
+        // 객실명 가져오기 (customFields 우선)
+        const roomName = this.getRoomName(room);
 
-        const imageUrl = sortedImages[0]?.url || ImageHelpers.EMPTY_IMAGE_SVG;
-        const imageClass = sortedImages[0]?.url ? '' : ' empty-image-placeholder';
+        // 객실 이미지 가져오기 (customFields 우선)
+        const sortedImages = this.getRoomImages(room, 'roomtype_thumbnail');
+        const firstThumbnail = sortedImages[0];
+
+        let imageUrl, imageClass;
+        if (firstThumbnail?.url) {
+            imageUrl = firstThumbnail.url;
+            imageClass = '';
+        } else {
+            imageUrl = ImageHelpers.EMPTY_IMAGE_SVG;
+            imageClass = 'empty-image-placeholder';
+        }
 
         // 객실 타입 (bedTypes 또는 roomStructures 사용)
         const roomType = room.bedTypes?.join(', ') || '-';
@@ -180,7 +186,7 @@ class RoomListMapper extends BaseDataMapper {
 
         roomCard.innerHTML = `
             <div class="room-card-image" onclick="selectRoom('${room.id}')" style="cursor: pointer;">
-                <img src="${imageUrl}" alt="${room.name}" loading="lazy" class="${imageClass}">
+                <img alt="${roomName}" loading="lazy">
                 <div class="room-overlay">
                     <div class="overlay-content">
                         <div class="overlay-info">
@@ -206,7 +212,7 @@ class RoomListMapper extends BaseDataMapper {
             </div>
             <div class="room-card-content">
                 <div class="room-header">
-                    <h3 class="room-title">${room.name}</h3>
+                    <h3 class="room-title">${roomName}</h3>
                     <button class="room-btn" onclick="selectRoom('${room.id}')">
                         <span class="btn-text">VIEW</span>
                         <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -231,6 +237,15 @@ class RoomListMapper extends BaseDataMapper {
                 </div>
             </div>
         `;
+
+        // 이미지 src와 class를 DOM API로 설정 (data URI 파싱 문제 방지)
+        const imgElement = roomCard.querySelector('.room-card-image img');
+        if (imgElement) {
+            imgElement.src = imageUrl;
+            if (imageClass) {
+                imgElement.classList.add(imageClass);
+            }
+        }
 
         // 애니메이션을 위한 지연시간 추가
         roomCard.style.transitionDelay = `${index * 0.1}s`;

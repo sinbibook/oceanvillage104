@@ -165,7 +165,7 @@
 /* Override for Index Page Hero Text */
 .hero-section .hero-content .hero-text {
     text-align: center !important;
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -451,6 +451,10 @@
     text-align: left;
     position: relative;
     border-radius: 8px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .room-tab-number {
@@ -480,6 +484,23 @@
     border-radius: 0;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+}
+
+/* Disable hover effect on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .room-tab:hover {
+        background: none;
+        transform: none;
+    }
+
+    /* Only active state shows styling on mobile */
+    .room-tab.active {
+        background: var(--color-secondary);
+        border-color: #f0f0f0;
+        border-radius: 0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 }
 
 .room-tab.active .room-tab-number,

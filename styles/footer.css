@@ -161,12 +161,13 @@
 
 .footer-bottom-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .copyright {
-    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--font-ko-sub);
+    color: color-mix(in srgb, white 50%, transparent);
     font-size: 0.9rem;
 }
 
@@ -189,7 +190,17 @@
 }
 
 .divider {
-    color: rgba(255, 255, 255, 0.3);
+    color: color-mix(in srgb, white 30%, transparent);
+}
+
+.copyright a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: var(--color-primary);
 }
 
 /* Responsive */

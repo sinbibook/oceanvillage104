@@ -30,9 +30,9 @@ class DirectionsMapper extends BaseDataMapper {
         if (heroTitleElement) {
             if (directionsHeroData?.title !== undefined) {
                 heroTitleElement.textContent = directionsHeroData.title;
-            } else if (this.data.property?.name) {
+            } else {
                 // fallback: 펜션명 + 오시는길
-                heroTitleElement.textContent = `${this.data.property.name} 오시는길`;
+                heroTitleElement.textContent = `${this.getPropertyName()} 오시는길`;
             }
         }
 
@@ -61,7 +61,7 @@ class DirectionsMapper extends BaseDataMapper {
         if (heroImage0Element) {
             const firstImage = sortedImages[0];
             const imageUrl = firstImage?.url || ImageHelpers.EMPTY_IMAGE_SVG;
-            const imageAlt = firstImage?.description || `${this.data.property?.name} 오시는길`;
+            const imageAlt = firstImage?.description || `${this.getPropertyName()} 오시는길`;
 
             heroImage0Element.src = imageUrl;
             heroImage0Element.alt = imageAlt;
@@ -79,7 +79,7 @@ class DirectionsMapper extends BaseDataMapper {
         if (heroImage1Element) {
             const secondImage = sortedImages[1];
             const imageUrl = secondImage?.url || ImageHelpers.EMPTY_IMAGE_SVG;
-            const imageAlt = secondImage?.description || `${this.data.property?.name} 오시는길 배너`;
+            const imageAlt = secondImage?.description || `${this.getPropertyName()} 오시는길 배너`;
 
             heroImage1Element.src = imageUrl;
             heroImage1Element.alt = imageAlt;
@@ -103,14 +103,14 @@ class DirectionsMapper extends BaseDataMapper {
 
         // 섹션 제목 매핑
         const sectionTitleElement = this.safeSelect('[data-directions-section-title]');
-        if (sectionTitleElement && property.name) {
-            sectionTitleElement.textContent = `${property.name} 오시는길`;
+        if (sectionTitleElement) {
+            sectionTitleElement.textContent = `${this.getPropertyName()} 오시는길`;
         }
 
         // 섹션 설명 매핑
         const descriptionElement = this.safeSelect('[data-directions-description]');
-        if (descriptionElement && property.name) {
-            descriptionElement.textContent = `${property.name} 오시는 길 입니다.`;
+        if (descriptionElement) {
+            descriptionElement.textContent = `${this.getPropertyName()} 오시는 길 입니다.`;
         }
 
         // 도로명 주소 매핑
@@ -127,8 +127,8 @@ class DirectionsMapper extends BaseDataMapper {
 
         // 안내사항 매핑
         const noticeElement = this.safeSelect('[data-directions-notice]');
-        if (noticeElement && property.name) {
-            noticeElement.textContent = `네비게이션 검색 시 '${property.name}' 또는 주소를 이용해 주세요.`;
+        if (noticeElement) {
+            noticeElement.textContent = `네비게이션 검색 시 '${this.getPropertyName()}' 또는 주소를 이용해 주세요.`;
         }
     }
 
@@ -210,7 +210,7 @@ class DirectionsMapper extends BaseDataMapper {
         const createMap = () => {
             try {
                 // 검색 쿼리 및 URL 생성 (한 번만)
-                const searchQuery = property.address || property.name || '선택한 위치';
+                const searchQuery = property.address || this.getPropertyName() || '선택한 위치';
                 const kakaoMapUrl = `https://map.kakao.com/?q=${encodeURIComponent(searchQuery)}`;
                 const openKakaoMap = () => window.open(kakaoMapUrl, '_blank');
 
@@ -241,7 +241,7 @@ class DirectionsMapper extends BaseDataMapper {
                 // 인포윈도우 콘텐츠 DOM 생성 및 이벤트 핸들러 연결
                 const infowindowContent = document.createElement('div');
                 infowindowContent.style.cssText = 'padding:5px; font-size:14px; cursor:pointer;';
-                infowindowContent.innerHTML = `${property.name}<br/><small style="color:#666;">클릭하면 카카오맵으로 이동</small>`;
+                infowindowContent.innerHTML = `${this.getPropertyName()}<br/><small style="color:#666;">클릭하면 카카오맵으로 이동</small>`;
                 infowindowContent.addEventListener('click', openKakaoMap);
 
                 const infowindow = new kakao.maps.InfoWindow({
@@ -300,21 +300,21 @@ class DirectionsMapper extends BaseDataMapper {
 
         // 지도 콘텐츠 영역 펜션명 매핑
         const mapPropertyNameElement = this.safeSelect('.map-content h4');
-        if (mapPropertyNameElement && property.name) {
-            mapPropertyNameElement.textContent = property.name;
+        if (mapPropertyNameElement) {
+            mapPropertyNameElement.textContent = this.getPropertyName();
         }
 
         // 섹션 제목 매핑 (CSS 선택자 기반)
         const legacySectionTitleElement = this.safeSelect('.section-title');
-        if (legacySectionTitleElement && property.name) {
-            legacySectionTitleElement.textContent = `${property.name} 오시는길`;
+        if (legacySectionTitleElement) {
+            legacySectionTitleElement.textContent = `${this.getPropertyName()} 오시는길`;
         }
 
         // 안내 문구 매핑 (CSS 선택자 기반)
         const legacyNoticeElement = this.safeSelect('.info-notice p');
-        if (legacyNoticeElement && property.name) {
+        if (legacyNoticeElement) {
             const originalText = legacyNoticeElement.textContent;
-            const updatedText = originalText.replace('제주 포레스트', property.name);
+            const updatedText = originalText.replace('제주 포레스트', this.getPropertyName());
             legacyNoticeElement.textContent = updatedText;
         }
     }
@@ -340,11 +340,11 @@ class DirectionsMapper extends BaseDataMapper {
         this.mapLegacySelectors();
 
         // 메타 태그 업데이트 (페이지별 SEO 적용)
-        const property = this.data.property;
         const directionsData = this.safeGet(this.data, 'homepage.customFields.pages.directions.sections.0.hero');
+        const propertyName = this.getPropertyName();
         const pageSEO = {
-            title: property?.name ? `오시는길 - ${property.name}` : 'SEO 타이틀',
-            description: directionsData?.description || property?.description || 'SEO 설명'
+            title: `오시는길 - ${propertyName}`,
+            description: directionsData?.description || this.data.property?.description || 'SEO 설명'
         };
         this.updateMetaTags(pageSEO);
 
