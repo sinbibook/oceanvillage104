@@ -117,7 +117,7 @@ class IndexMapper extends BaseDataMapper {
                 if (roomsInGroup.length === 0) return;
 
                 // 탭 생성
-                const tab = document.createElement('div');
+                const tab = document.createElement('button');
                 tab.className = `room-tab${index === 0 ? ' active' : ''}`;
                 tab.setAttribute('data-room', group);
                 tab.innerHTML = `
@@ -142,11 +142,11 @@ class IndexMapper extends BaseDataMapper {
                     window.location.href = `room-list.html?group=${encodeURIComponent(group)}`;
                 });
 
-                // 설명 생성
+                // 설명 생성 (customFields 우선)
                 const descItem = document.createElement('div');
                 descItem.className = `room-desc-item${index === 0 ? ' active' : ''}`;
                 descItem.setAttribute('data-room', group);
-                const propertyName = this.data.property?.name || '숙소';
+                const propertyName = this.getPropertyName();
                 descItem.innerHTML = `<p class="room-desc-text">${propertyName}의 ${group} 객실입니다.</p>`;
                 descriptionsContainer.appendChild(descItem);
 
@@ -155,11 +155,11 @@ class IndexMapper extends BaseDataMapper {
                 imageItem.className = `room-image-item${index === 0 ? ' active' : ''}`;
                 imageItem.setAttribute('data-room', group);
 
-                // 그룹 내 모든 객실의 썸네일 수집 (isSelected: true만)
+                // 그룹 내 모든 객실의 썸네일 수집 (customFields 우선)
                 const allThumbnails = [];
+
                 roomsInGroup.forEach(room => {
-                    const thumbnails = room.images?.[0]?.thumbnail || [];
-                    const selectedThumbnails = thumbnails.filter(img => img.isSelected);
+                    const selectedThumbnails = this.getRoomImages(room, 'roomtype_thumbnail');
                     allThumbnails.push(...selectedThumbnails);
                 });
 
@@ -199,25 +199,50 @@ class IndexMapper extends BaseDataMapper {
                 window.initRoomPreviewAnimation();
             }
 
-            // Room tabs 이벤트 리스너
+            // Room tabs 이벤트 리스너 - 모바일과 데스크톱 지원
             const tabs = document.querySelectorAll('.room-tab');
             const images = document.querySelectorAll('.room-image-item');
             const descItems = document.querySelectorAll('.room-desc-item');
 
-            tabs.forEach(tab => {
-                tab.addEventListener('mouseenter', () => {
-                    const roomType = tab.dataset.room;
-                    tabs.forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
+            function activateTab(tab) {
+                const roomType = tab.dataset.room;
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
 
-                    images.forEach(img => {
-                        img.classList.toggle('active', img.dataset.room === roomType);
-                    });
-
-                    descItems.forEach(item => {
-                        item.classList.toggle('active', item.dataset.room === roomType);
-                    });
+                images.forEach(img => {
+                    img.classList.toggle('active', img.dataset.room === roomType);
                 });
+
+                descItems.forEach(item => {
+                    item.classList.toggle('active', item.dataset.room === roomType);
+                });
+            }
+
+            tabs.forEach(tab => {
+                // Desktop: hover event
+                tab.addEventListener('mouseenter', () => {
+                    if (window.innerWidth > 768) {
+                        activateTab(tab);
+                    }
+                });
+
+                // Mobile: click/touch event
+                tab.addEventListener('click', (e) => {
+                    // VIEW 버튼 클릭시에는 preventDefault 하지 않음
+                    if (!e.target.closest('.room-tab-detail-btn')) {
+                        e.preventDefault();
+                        activateTab(tab);
+                    }
+                });
+
+                // iOS Safari 전용 터치 이벤트
+                tab.addEventListener('touchend', (e) => {
+                    // VIEW 버튼 터치시에는 preventDefault 하지 않음
+                    if (!e.target.closest('.room-tab-detail-btn')) {
+                        e.preventDefault();
+                        activateTab(tab);
+                    }
+                }, { passive: false });
             });
         }
     }
@@ -472,13 +497,13 @@ class IndexMapper extends BaseDataMapper {
     }
 
     /**
-     * Property 정보 매핑 (이름, 영문명)
+     * Property 정보 매핑 (이름, 영문명) - customFields 우선
      */
     mapPropertyInfo() {
         if (!this.isDataLoaded) return;
 
-        const propertyName = this.safeGet(this.data, 'property.name') || '숙소명';
-        const propertyNameEn = this.safeGet(this.data, 'property.nameEn') || 'PROPERTY NAME';
+        const propertyName = this.getPropertyName();
+        const propertyNameEn = this.getPropertyNameEn();
 
         // Map property name to all elements
         this.safeSelectAll('.logo-text, .brand-title, [data-property-name]').forEach(el => {

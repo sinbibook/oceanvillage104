@@ -268,11 +268,11 @@ class ReservationMapper extends BaseDataMapper {
         this.mapCancellationFeeSection();
 
         // 메타 태그 업데이트 (페이지별 SEO 적용)
-        const property = this.data.property;
         const reservationData = this.safeGet(this.data, 'homepage.customFields.pages.reservation.sections.0.hero');
+        const propertyName = this.getPropertyName();
         const pageSEO = {
-            title: property?.name ? `예약안내 - ${property.name}` : 'SEO 타이틀',
-            description: reservationData?.description || property?.description || 'SEO 설명'
+            title: `예약안내 - ${propertyName}`,
+            description: reservationData?.description || this.data.property?.description || 'SEO 설명'
         };
         this.updateMetaTags(pageSEO);
 

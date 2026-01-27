@@ -102,9 +102,12 @@
     }
 
     // Initialize
-    document.addEventListener('DOMContentLoaded', function() {
-        loadHeader();
-        loadFooter();
+    document.addEventListener('DOMContentLoaded', async function() {
+        // header와 footer 둘 다 로드 완료될 때까지 대기
+        await Promise.all([loadHeader(), loadFooter()]);
+
+        // 둘 다 로드 완료 후 초기화 이벤트 발생
+        document.dispatchEvent(new Event('headerFooterLoaded'));
     });
 
 })();
