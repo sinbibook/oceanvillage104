@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.45.0",
-    "generatedAt": "2026-01-27T08:56:04.926Z",
+    "version": "1.46.0",
+    "generatedAt": "2026-02-05T01:14:19.074Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -44,10 +44,10 @@
       "businessNumber": "864-23-01417",
       "representativeName": "최윤희",
       "businessAddress": "전북특별자치도 부안군 변산면 변산해변로 241. A동",
-      "businessPhone": "",
-      "businessEmail": "",
-      "businessType": "",
-      "businessCategory": "",
+      "businessPhone": "010-2570-1040",
+      "businessEmail": "april09@naver.com",
+      "businessType": "individual",
+      "businessCategory": "숙박업",
       "eCommerceRegistrationNumber": ""
     },
     "contractInfo": {
@@ -387,7 +387,7 @@
     "nameEn": "Buan OceanVillage 104 PoolVilla",
     "domain": "oceanvillage104.kr",
     "realtimeBookingId": "https://www.bookingplay.co.kr/booking/1/9893",
-    "ybsId": "78854"
+    "ybsId": ""
   },
   "rooms": [
     {
