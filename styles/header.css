@@ -219,7 +219,7 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 12px 24px;
+    padding: 10px 24px;
     background: transparent;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -253,6 +253,7 @@
 
 .reservation-btn .btn-text {
     display: inline-block;
+    font-size: 1.1rem;
 }
 
 .reservation-btn .icon {
@@ -529,7 +530,7 @@ body.mobile-menu-open {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 14px 16px;
+    padding: 10px 16px;
     background: white;
     border: none;
     color: var(--color-secondary);
@@ -553,6 +554,10 @@ body.mobile-menu-open {
 
 .mobile-reservation-btn:hover .icon {
     transform: translate(2px, -2px);
+}
+
+.mobile-reservation-btn span {
+    font-size: 1.1rem;
 }
 
 .mobile-reservation-btn .icon {

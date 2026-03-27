@@ -290,8 +290,8 @@
         max-width: 100%;
     }
     .hero-section {
-        height: 100vh;
-        min-height: 100vh;
+        height: 60vh;
+        min-height: 60vh;
     }
 
     .hero-bottom-section {
