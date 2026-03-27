@@ -261,6 +261,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+        min-height: 60vh;
+    }
+
     .directions-content-container {
         max-width: 100%;
     }

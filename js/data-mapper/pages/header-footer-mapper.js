@@ -492,12 +492,6 @@ class HeaderFooterMapper extends BaseDataMapper {
             footerPhone.textContent = property.contactPhone;
         }
 
-        // 이메일 매핑
-        const footerEmail = this.safeSelect('[data-footer-email]');
-        if (footerEmail && property.contactEmail) {
-            footerEmail.textContent = property.contactEmail;
-        }
-
         // 대표자명 매핑
         const representativeNameElement = this.safeSelect('[data-footer-representative-name]');
         if (representativeNameElement && businessInfo.representativeName) {
