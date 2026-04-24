@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.61.0",
-    "generatedAt": "2026-04-17T07:05:43.929Z",
+    "version": "1.62.0",
+    "generatedAt": "2026-04-24T07:46:54.913Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -155,36 +155,6 @@
           {
             "id": "8c59b47e-315c-4119-816d-aa5e4378e635",
             "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/64f8f3c1-d04e-476e-95dd-4599c6ac0969/main/1764834078067-f4d1gi8gwyd.jpg",
-            "sortOrder": 0,
-            "description": "",
-            "isSelected": true
-          }
-        ]
-      },
-      {
-        "id": "cbad6ced-8143-41a6-8d8f-5cf943135806",
-        "name": "편의점",
-        "description": "고객님들의 편안한 여행을 위해 24시간 무인 편의점을 운영하고 있습니다.\n",
-        "usageGuide": " ",
-        "displayOrder": 2,
-        "images": [
-          {
-            "id": "78e673f6-2bc6-4e6c-8683-05559268e6f4",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/cbad6ced-8143-41a6-8d8f-5cf943135806/main/1764215811405-8umd497ivu5.jpg",
-            "sortOrder": 1,
-            "description": "",
-            "isSelected": true
-          },
-          {
-            "id": "ee8ac6f6-9640-4b82-9def-b99fb323db5d",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/cbad6ced-8143-41a6-8d8f-5cf943135806/main/1764215811406-ekis5mx6m8e.jpg",
-            "sortOrder": 2,
-            "description": "",
-            "isSelected": true
-          },
-          {
-            "id": "9e2d0b41-dd36-4fb9-bf77-18b5d24fff64",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/cbad6ced-8143-41a6-8d8f-5cf943135806/main/1764215811405-e5fp8wbz8s6.jpg",
             "sortOrder": 0,
             "description": "",
             "isSelected": true
@@ -2376,7 +2346,7 @@
       "id": "7e92f0e0-2013-49ea-a9a0-f82171f39cf6",
       "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
       "propertyName": "부안 오션빌리지104 풀빌라",
-      "name": "B-101 (오션뷰,미온수풀빌라)",
+      "name": "B-101 (오션뷰,미온수X)",
       "nameEn": "B-101",
       "description": "분리형 : 거실1+주방1+침대룸1(더블1+싱글1)+화장실2+테라스",
       "roomInfo": "[인원추가(1박기준/현장결제)]\n- 24개월 이상 1인 당 20,000원 (1박기준/현장결제)\n- 24개월 이하는 무료이나 인원 수 포함\n- 최대인원 초과입실은 불가합니다.",
@@ -2582,15 +2552,15 @@
       ],
       "displayOrder": 10,
       "createdAt": "2025-11-27T03:32:52.390Z",
-      "updatedAt": "2026-03-10T01:09:51.965Z",
+      "updatedAt": "2026-04-24T07:46:20.308Z",
       "createdBy": "d3f6de9e-18a3-4b4a-a692-0bceecacad94",
-      "updatedBy": "b25a183c-5cce-46ac-af15-33a2090f8b49"
+      "updatedBy": "9f55b984-2b5c-4630-aecc-d7c1a7b5120a"
     },
     {
       "id": "03171b50-8e89-4f8e-9740-014a0a44d852",
       "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
       "propertyName": "부안 오션빌리지104 풀빌라",
-      "name": "B-102 (오션뷰,미온수풀빌라)",
+      "name": "B-102 (오션뷰,미온수X)",
       "nameEn": "B-102",
       "description": "분리형 : 거실1+주방1+침대룸1(더블1+싱글1)+화장실2+테라스",
       "roomInfo": "[인원추가(1박기준/현장결제)]\n- 24개월 이상 1인 당 20,000원 (1박기준/현장결제)\n- 24개월 이하는 무료이나 인원 수 포함\n- 최대인원 초과입실은 불가합니다.",
@@ -2817,9 +2787,9 @@
       ],
       "displayOrder": 11,
       "createdAt": "2025-11-27T03:32:52.404Z",
-      "updatedAt": "2026-03-10T01:10:00.398Z",
+      "updatedAt": "2026-04-24T07:46:40.730Z",
       "createdBy": "d3f6de9e-18a3-4b4a-a692-0bceecacad94",
-      "updatedBy": "b25a183c-5cce-46ac-af15-33a2090f8b49"
+      "updatedBy": "9f55b984-2b5c-4630-aecc-d7c1a7b5120a"
     },
     {
       "id": "b3737769-2838-4da1-9efe-8f8aab022571",
@@ -5284,7 +5254,9 @@
             "isSelected": false,
             "category": "property_exterior"
           }
-        ]
+        ],
+        "name": "부안 오션빌리지104 풀빌라",
+        "nameEn": "Buan OceanVillage 104 PoolVilla"
       },
       "roomtypes": [
         {
