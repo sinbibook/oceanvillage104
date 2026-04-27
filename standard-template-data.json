@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.62.0",
-    "generatedAt": "2026-04-24T07:46:54.913Z",
+    "version": "1.63.0",
+    "generatedAt": "2026-04-27T06:56:43.903Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -4781,36 +4781,36 @@
                 "title": "",
                 "images": [
                   {
-                    "id": "5ffce4e1-869d-4f72-bb2d-83d36234cd07",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764219980456-1rlt5utm2ga.jpg",
-                    "sortOrder": 0,
-                    "description": "",
-                    "isSelected": true
-                  },
-                  {
                     "id": "6ef7fc8e-5b10-4916-9cef-c1a62dc3e977",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764833962583-rqfj03k9vad.jpg",
-                    "sortOrder": 1,
+                    "sortOrder": 0,
                     "description": "",
                     "isSelected": true
                   },
                   {
                     "id": "713403c3-338d-4d91-b70f-b8e5422f9d36",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764833962583-juytvm69f2.jpg",
-                    "sortOrder": 2,
-                    "description": "",
-                    "isSelected": true
-                  },
-                  {
-                    "id": "17af0a96-a2f1-4069-bfa8-be95ead52008",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764219980457-88w9wqxkjt.jpg",
-                    "sortOrder": 3,
+                    "sortOrder": 1,
                     "description": "",
                     "isSelected": true
                   },
                   {
                     "id": "12328e7f-a519-474e-8339-1f98e5700459",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764219980457-02n7ib25y0nt.jpg",
+                    "sortOrder": 2,
+                    "description": "",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "5ffce4e1-869d-4f72-bb2d-83d36234cd07",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764219980456-1rlt5utm2ga.jpg",
+                    "sortOrder": 3,
+                    "description": "",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "17af0a96-a2f1-4069-bfa8-be95ead52008",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_hero/1764219980457-88w9wqxkjt.jpg",
                     "sortOrder": 4,
                     "description": "",
                     "isSelected": true
@@ -4858,22 +4858,22 @@
                 "title": "오션빌리지에서 경험하세요",
                 "images": [
                   {
-                    "id": "05572e3f-10da-48a5-bd37-47d4b2df6908",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_essence/1764219980457-lbfdx3qgow9.jpg",
-                    "sortOrder": 0,
-                    "description": "",
-                    "isSelected": true
-                  },
-                  {
                     "id": "12437593-9f42-4624-99a7-2c24c8d716b6",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_essence/1764219980457-0x84fdqu0kxj.jpg",
-                    "sortOrder": 1,
+                    "sortOrder": 0,
                     "description": "",
                     "isSelected": true
                   },
                   {
                     "id": "7cdafc56-16b3-42e4-ac54-9ef81e8ec70c",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_essence/1764833962583-16bqip6kj8u.jpg",
+                    "sortOrder": 1,
+                    "description": "",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "05572e3f-10da-48a5-bd37-47d4b2df6908",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_essence/1764219980457-lbfdx3qgow9.jpg",
                     "sortOrder": 2,
                     "description": "",
                     "isSelected": true
@@ -4887,43 +4887,43 @@
                 "title": "Ocean Village Value",
                 "images": [
                   {
+                    "id": "839d9038-38e9-484c-b270-618077f44cfc",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764294096126-4kp0mfet0oc.jpg",
+                    "sortOrder": 0,
+                    "description": " ",
+                    "isSelected": true
+                  },
+                  {
                     "id": "d2815542-efa7-4f24-9b98-ff19010acd21",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764219980457-udb1df2wq2g.jpg",
-                    "sortOrder": 0,
+                    "sortOrder": 1,
                     "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "313b03e4-5263-4a8f-ae0c-31ca6e217d97",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764220165730-yayul4lru4l.jpg",
-                    "sortOrder": 1,
+                    "sortOrder": 2,
                     "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "7c8144f3-ffe5-4b7e-a9e3-e426e06f500c",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764221293569-ndivk056y6.jpg",
-                    "sortOrder": 2,
+                    "sortOrder": 3,
                     "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "244b1219-289d-4370-a9d5-34b74e7e5d32",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764220082483-tsfvkkjqx7.jpg",
-                    "sortOrder": 3,
+                    "sortOrder": 4,
                     "description": " ",
                     "isSelected": true
                   },
                   {
                     "id": "ccf0684e-72a1-42be-9adf-e259f7a2c5b5",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764220082483-fjzo9rsq9jw.jpg",
-                    "sortOrder": 4,
-                    "description": " ",
-                    "isSelected": true
-                  },
-                  {
-                    "id": "839d9038-38e9-484c-b270-618077f44cfc",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/7e7cbc77-751a-4fa1-bf53-697c77f58460/index_gallery/1764294096126-4kp0mfet0oc.jpg",
                     "sortOrder": 5,
                     "description": " ",
                     "isSelected": true
