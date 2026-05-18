@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.72.0",
-    "generatedAt": "2026-05-18T01:27:47.971552946Z",
+    "version": "1.73.0",
+    "generatedAt": "2026-05-18T05:36:07.939516628Z",
     "templateType": "full_banner_slider_group",
     "propertyId": "77653dd1-c1fb-4686-9674-23340a9284e7",
     "homepageId": "7e7cbc77-751a-4fa1-bf53-697c77f58460"
@@ -278,7 +278,7 @@
           {
             "id": "cc8dc8b3-8142-4163-b6f6-4de51238e55e",
             "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/property/77653dd1-c1fb-4686-9674-23340a9284e7/exterior/1764219803606-uzos63y2euk.jpg",
-            "sortOrder": 1,
+            "sortOrder": 0,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -386,7 +386,7 @@
     ],
     "nameEn": "Buan OceanVillage 104 PoolVilla",
     "domain": "oceanvillage104.kr",
-    "realtimeBookingId": "https://www.bookingplay.co.kr/partner/item/9893/calendar_list/",
+    "realtimeBookingId": "https://map.naver.com/p/entry/place/1836369464",
     "ybsId": ""
   },
   "rooms": [
