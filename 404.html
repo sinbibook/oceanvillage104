@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="아름다운 오션뷰를 보며 힐링할 수 있는 부안 오션빌리지 104 입니다.">
+    <title>부안 오션빌리지104 풀빌라</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/common.css" as="style">
+    <link rel="preload" href="styles/theme.css" as="style">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/theme.css">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: color-mix(in srgb, var(--color-secondary) 30%, transparent);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #footer-placeholder {
+            margin-top: auto;
+        }
+
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 150px 20px 100px;
+            text-align: center;
+        }
+
+        .error-icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 30px;
+        }
+
+        .error-code {
+            font-size: 80px;
+            font-weight: 900;
+            color: var(--color-secondary, #658399);
+            line-height: 1;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .error-title {
+            font-family: var(--font-ko-main);
+            font-size: 32px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .error-message {
+            font-family: var(--font-ko-sub);
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            max-width: 500px;
+        }
+
+        .error-button {
+            display: inline-block;
+            padding: 14px 48px;
+            background: var(--color-secondary, #658399);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: var(--font-ko-sub);
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error-button:hover {
+            background: #5a7185;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 100px 20px 80px;
+            }
+
+            .error-code {
+                font-size: 60px;
+            }
+
+            .error-title {
+                font-size: 24px;
+            }
+
+            .error-message {
+                font-size: 14px;
+            }
+        }
+    </style>
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="부안 오션빌리지104 풀빌라" />
+  <meta property="og:description" content="오션뷰 감성을 담은 힐링 풀빌라 부안 오션빌리지 104 입니다." />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/03/10/aLftlU90VeID.jpg" />
+  <meta property="og:url" content="https://oceanvillage104.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="부안 오션빌리지104 풀빌라" />
+  <meta name="twitter:description" content="오션뷰 감성을 담은 힐링 풀빌라 부안 오션빌리지 104 입니다." />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/03/10/aLftlU90VeID.jpg" />
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Error Content -->
+    <main class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">페이지를 찾을 수 없습니다.</h1>
+        <p class="error-message">
+            요청하신 페이지가 존재하지 않거나 비활성화되었습니다.<br>
+            홈으로 돌아가기 버튼을 클릭해주세요.
+        </p>
+        <button class="error-button" onclick="window.location.href='index.html'">
+            홈으로 돌아가기
+        </button>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Preview Handler for Admin Integration -->
+    <script src="js/preview-handler.js"></script>
+
+    <!-- Image Helpers -->
+    <script src="js/image-helpers.js"></script>
+
+    <!-- Base Data Mapper -->
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+
+    <!-- Header Footer Mapper -->
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+
+    <!-- Header and Footer Loader -->
+    <script src="js/header-footer-loader.js"></script>
+
+</body>
+</html>

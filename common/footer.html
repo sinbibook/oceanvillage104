@@ -19,6 +19,11 @@
                         <span class="footer-label">통신판매업</span>
                         <span class="footer-value" data-footer-ecommerce>제2024-0000호</span>
                     </div>
+                    <!-- data-* 속성 : data-footer-rural-stay-mark-wrap (customFields.footer.ruralStayMark 가 있을 때만 노출, 기본 숨김)
+                         data-footer-rural-stay-mark : 농어촌민박사업자 이미지 (표시마크 + 신고번호, alt = description) -->
+                    <div class="footer-rural-stay-mark-wrap" data-footer-rural-stay-mark-wrap style="display: none;">
+                        <img class="footer-rural-stay-mark" src="" alt="농어촌민박사업자" data-footer-rural-stay-mark>
+                    </div>
                 </div>
 
                 <!-- Contact Info -->
@@ -34,8 +39,8 @@
                     </div>
                 </div>
 
-                <!-- Social & Follow Us -->
-                <div class="footer-section footer-social" data-social-links-section>
+                <!-- Social & Follow Us : 매핑된 소셜 링크가 있을 때만 mapper가 노출 -->
+                <div class="footer-section footer-social" data-social-links-section style="display: none;">
                     <h3 class="footer-title">FOLLOW US</h3>
                     <div class="social-icons">
                         <a href="#" class="social-icon" data-social-instagram aria-label="Instagram" style="display: none;">

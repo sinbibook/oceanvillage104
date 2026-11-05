@@ -219,14 +219,25 @@ class FacilityMapper extends BaseDataMapper {
             facilityName.textContent = facility.name || 'BBQ';
         }
 
-        // 시설 설명 매핑
+        // SPECIAL 번호 — 헤더 Specials 메뉴와 같은 순서(displayOrder)로 01, 02, 03 …
+        const facilityNumber = this.safeSelect('#facility-number');
+        if (facilityNumber) {
+            const facilities = this.safeGet(this.data, 'property.facilities') || [];
+            const sorted = [...facilities].sort((a, b) => (a.displayOrder ?? 0) - (b.displayOrder ?? 0));
+            const order = sorted.findIndex(item => item.id === facility.id);
+            facilityNumber.textContent = `SPECIAL ${String((order === -1 ? 0 : order) + 1).padStart(2, '0')}`;
+        }
+
+        // 시설 설명 매핑 — 빌더 about.title → 시설 정보 description. 둘 다 비면 영역째 숨긴다
+        // (예전에는 기본 문구 '시설 설명입니다.' 를 넣어, 설명 없이 이용안내만 있는 시설에도 그 문구가 보였다)
         const facilityDescription = this.safeSelect('[data-facility-description]');
         if (facilityDescription) {
-            // customFields에서 about.title 가져오기
             const facilityPages = this.safeGet(this.data, 'homepage.customFields.pages.facility');
-            const facilityPageData = facilityPages?.find(page => page.id === facility.id);
-            const description = facilityPageData?.sections?.[0]?.about?.title || facility.description || '시설 설명입니다.';
+            const facilityPageData = Array.isArray(facilityPages) ? facilityPages.find(page => page.id === facility.id) : null;
+            const description = String(facilityPageData?.sections?.[0]?.about?.title || facility.description || '').trim();
+            const wrapper = facilityDescription.closest('.facility-description') || facilityDescription;
             facilityDescription.textContent = description;
+            wrapper.style.display = description ? '' : 'none';
         }
     }
 
